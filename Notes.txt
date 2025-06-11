@@ -1,0 +1,31 @@
+NOTE: Table name must be "sequelizedb"
+
+Testing APIs.
+
+POST - create user with this api.
+
+http://localhost:5000/create_user
+object - {
+    "firstName": "Hello",
+    "lastName": "world",
+    "email": "abc@gmail.com",
+    "contact": "03151309946"
+}
+
+-----------------
+
+PUT - update user with this api.
+
+http://localhost:5000/update_user/6-[id as number for specific record]
+object - {
+    "firstName": "Hello",
+    "lastName": "world",
+    "email": "abc@gmail.com",
+    "contact": "03151309946"
+}
+
+----------------
+
+DELETE - delete user with this api.
+
+http://localhost:5000/delete_user/6-[id as number for specific record]
