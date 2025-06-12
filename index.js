@@ -15,8 +15,6 @@ app.use("/", route)
 //         console.log("ERROR", err)
 //     })
 
-
-
 app.listen(port, () => {
     console.log(`Server is running http://localhost:${port}`);
 }) 
