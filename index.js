@@ -8,12 +8,12 @@ const port = 5000;
 app.use("/", route)
 
 
-// sequelize.sync({alter: true})
-//     .then((res) => {
-//         console.log("created Databasse"+ res)
-//     }).catch((err) => {
-//         console.log("ERROR", err)
-//     })
+sequelize.sync({alter: true})
+    .then((res) => {
+        console.log("created Databasse"+ res)
+    }).catch((err) => {
+        console.log("ERROR", err)
+    })
 
 app.listen(port, () => {
     console.log(`Server is running http://localhost:${port}`);
